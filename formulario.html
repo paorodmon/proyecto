@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Pagina 02</title>
+<title>Formulario</title>
 
 <script language="javascript">
 function Subir()
@@ -44,7 +44,6 @@ function Subir()
 	alert(formulario);	
 }
 
-//-->
 </script>
 
 </head>
@@ -52,15 +51,15 @@ function Subir()
 <form name="form1" method="POST" action="">
 <table border="0" cellpadding="0" cellspacing="0" width="400">
 <tr>
-	<td width="50%">Ingresa el usuario: (*)</td>
+	<td width="50%">Ingresa el usuario:<a style="color:red">*</a></td>
 	<td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
 </tr>
 <tr>
-	<td width="50%">Ingresa el nombre: (*)</td>
+	<td width="50%">Ingresa el nombre:<a style="color:red">*</a></td>
 	<td><input type="text" name="nombre" id="nombre" value=""></td>
 </tr>
 <tr>
-	<td width="50%">Ingresa el apellido: (*)</td>
+	<td width="50%">Ingresa el apellido:<a style="color:red">*</a></td>
 	<td><input type="text" name="apellido" id="apellido" value=""></td>
 </tr>
 <tr>
@@ -68,22 +67,22 @@ function Subir()
 	<td width="50%"><input type="text" name="email" id="email" value=""></td>
 </tr>
 <tr>
-	<td width="50%">Ingresa una password: (*)</td>
+	<td width="50%">Ingresa una password:<a style="color:red">*</a></td>
 	<td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
 </tr>
 <tr>
-	<td width="50%">Repite la password: (*)</td>
+	<td width="50%">Repite la password:<a style="color:red">*</a></td>
 	<td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
 </tr>
 <tr>
-	<td width="50%" align="left" valign="top">Seleccione sus hobbies: (*)</td>
+	<td width="50%" align="left" valign="top">Seleccione sus hobbies:<a style="color:red">*</a></td>
 	<td width="50%">
-	<input type="checkbox" name="hobby" value="programar">Programar&nbsp;
-	<input type="checkbox" name="hobby" value="deportes">Deportes<br>
-	<input type="checkbox" name="hobby" value="meditar">Meditar&nbsp;
-	<input type="checkbox" name="hobby" value="cine">Cine<br>
-	<input type="checkbox" name="hobby" value="leer">Leer&nbsp;
-	<input type="checkbox" name="hobby" value="videojuegos">Video Juegos<br>
+	<input type="checkbox" name="hobby" value="Programar">Programar&nbsp;
+	<input type="checkbox" name="hobby" value="Futbol">Futbol<br>
+	<input type="checkbox" name="hobby" value="Meditar">Meditar&nbsp;
+	<input type="checkbox" name="hobby" value="Cine">Ir al Cine<br>
+	<input type="checkbox" name="hobby" value="Leer">Leer&nbsp;
+	<input type="checkbox" name="hobby" value="Videojuegos">Video Juegos<br>
 	</td>
 </tr>
 <tr>
@@ -91,20 +90,21 @@ function Subir()
 	<td width="50%">
 	<select name="pais" id="pais">
 		<option value="">--</option>
-		<option value="argentina">Argentina</option>
-		<option value="brasil">Brasil</option>
-		<option value="chile">Chile</option>
-		<option value="colombia">Colombia</option>
-		<option value="ecuador">Ecuador</option>
+		<option value="Mexico">Mexico</option>
+		<option value="Argentina">Argentina</option>
+		<option value="Brasil">Brasil</option>
+		<option value="Chile">Chile</option>
+		<option value="Colombia">Colombia</option>
+		<option value="Ecuador">Ecuador</option>
 	</select>
 	</td>
 </tr>
 <tr>
 	<td width="50%">Sexo:</td>
 	<td width="50%">
-	<input type="radio" name="sexo" value="m">M&nbsp;
-	<input type="radio" name="sexo" value="f">F&nbsp;
-	<input type="radio" name="sexo" value="n">N&nbsp;
+	<input type="radio" name="sexo" value="Masculino">M&nbsp;
+	<input type="radio" name="sexo" value="Femenino">F&nbsp;
+	<input type="radio" name="sexo" value="Sin especificar">N&nbsp;
 	</td>
 </tr>
 <tr>
@@ -116,8 +116,9 @@ function Subir()
 	</td>
 </tr>
 </table>
-Los campos con asteriscos(*) son obligatorios.
+Los campos con asteriscos <a style="color:red">*</a> son obligatorios.
 
 </form>
 </body>
 </html>
+
